@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f1e5;
+            color: #3d3d3d;
+        }
+
+        /* Header */
+        header {
+            background-color: #d9883d; /* Autumn Tan */
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: lighter;
+        }
+
+        /* Profile Section */
+        .profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -50px;
+            padding: 30px 0;
+            background-color: #fff;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 30px;
+            object-fit: cover;
+        }
+
+        .profile h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #d67ba1; /* Soft Pink */
+        }
+
+        .profile p {
+            font-size: 1.1rem;
+        }
+
+        /* Section Title */
+        .section-title {
+            font-size: 2.2rem;
+            margin: 40px 0 20px;
+            text-align: center;
+            color: #2c2c2c;
+        }
+
+        /* Qualifications and Skills Section */
+        .qualifications,
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
+
+        .qualification-card,
+        .skills-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .qualification-card h3,
+        .skills-card h3 {
+            color: #d67ba1; /* Soft Pink */
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+
+        .qualification-card p,
+        .skills-card p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #d9883d; /* Autumn Tan */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .qualifications,
+            .skills {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>My Portfolio</h1>
+        <p>A journey through my work, experiences, and growth.</p>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="profile container">
+        <img src="image.jpg" alt="Clementine's Photo" class="img-fluid"> <!-- Replace with your image -->
+        <div>
+            <h2>Clementine</h2>
+            <p>Welcome to my portfolio. I am a BCA 2nd-year student passionate about programming and creative writing.</p>
+        </div>
+    </section>
+
+    <!-- Qualification Section -->
+    <section class="container">
+        <h2 class="section-title">Educational Qualifications</h2>
+        <div class="row qualifications">
+            <div class="col-md-4 qualification-card">
+                <h3>BCA (Bachelor of Computer Applications)</h3>
+                <p>Achilles University</p>
+                <p>2023 - Present</p>
+            </div>
+            <div class="col-md-4 qualification-card">
+                <h3>12th Class (Science)</h3>
+                <p>Athene School</p>
+                <p>2020</p>
+            </div>
+            <div class="col-md-4 qualification-card">
+                <h3>10th Class</h3>
+                <p>Persephone School</p>
+                <p>2020 passout</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="row skills">
+            <div class="col-md-3 skills-card">
+                <h3>Writing & Activities</h3>
+                <p>Creating engaging content and participating in various writing activities.</p>
+            </div>
+            <div class="col-md-3 skills-card">
+                <h3>Freelance Copywriting</h3>
+                <p>Providing freelance copywriting services for blogs, websites, and social media.</p>
+            </div>
+            <div class="col-md-3 skills-card">
+                <h3>Java</h3>
+                <p>Developing programs and applications using Java for different purposes.</p>
+            </div>
+        </div>
+        
+        <section id="skills" class="py-5">
+            <div class="container">
+                <h2 class="display-5 text-danger mb-4">Skill Sets</h2>
+                <!-- Frontend Skills -->
+                <div class="skill-category">
+                    <h3 class="text-danger">Frontend</h3>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card skills-card p-3 bg-light shadow">
+                                <h4>HTML</h4>
+                                <p>Proficient in writing well-structured, semantic HTML code.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card skills-card p-3 bg-light shadow">
+                                <h4>CSS</h4>
+                                <p>Experienced with styling web pages using CSS and frameworks like Bootstrap.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card skills-card p-3 bg-light shadow">
+                                <h4>JavaScript</h4>
+                                <p>Skilled in JavaScript for adding interactivity and dynamic functionality to websites.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Database Skills -->
+                <div class="skill-category">
+                    <h3 class="text-danger">Database</h3>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card skills-card p-3 bg-light shadow">
+                                <h4>MySQL</h4>
+                                <p>Experienced in working with MySQL for database management and queries.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card skills-card p-3 bg-light shadow">
+                                <h4>PostgreSQL</h4>
+                                <p>Knowledge of PostgreSQL for building robust, relational databases.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card skills-card p-3 bg-light shadow">
+                                <h4>MongoDB</h4>
+                                <p>Familiar with NoSQL databases like MongoDB for handling unstructured data.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Backend Skills -->
+                <div class="skill-category">
+                    <h3 class="text-danger">Backend</h3>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card skills-card p-3 bg-light shadow">
+                                <h4>Node.js</h4>
+                                <p>Experienced in building backend services and APIs with Node.js.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card skills-card p-3 bg-light shadow">
+                                <h4>Python</h4>
+                                <p>Knowledge of Python for backend development and scripting tasks.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card skills-card p-3 bg-light shadow">
+                                <h4>Flask</h4>
+                                <p>Experienced in using Flask to build lightweight web applications in Python.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+
+     <!-- Contact Section -->
+     <section id="contact" class="py-5 contact-section">
+        <div class="container text-center">
+            <h2 class="display-5 text-danger mb-4">Contact Me</h2>
+            <form class="mx-auto" style="max-width: 600px;">
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-custom w-100">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Clementine, BCA 2nd Year Student</p>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
